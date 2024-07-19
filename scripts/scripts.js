@@ -9,11 +9,22 @@ const instructions = document.getElementById("instruction-list");
 const cList = document.getElementById("commentList");
 const cInput = document.getElementById("commentInput");
 const cBtn = document.getElementById("addCommentBtn");
+// cocktails
+const strawbGin = document.getElementById("straw-gin");
+const oldFashion = document.getElementById("old-fashioned");
+const agavMojito = document.getElementById("agave-mojito");
+const recipeCard = document.getElementsByClassName("cocktail");
 
 // cache element using querySelector
 const listEl = document.querySelector('li');
 
+// change recipe card on click function
+function changeCard(event) {
+    document.cocktail.style.backgroundColor = "red";
+}
 
+// call functions
+recipeCard.addEventListener("click", changeCard);
 
 
 
@@ -33,4 +44,5 @@ function addComment(event) {
     cInput.focus();
     cBtn.removeEventListener("click", addComment);
 }
+// call function
 cBtn.addEventListener("click", addComment);
