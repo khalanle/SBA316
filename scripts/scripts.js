@@ -15,17 +15,6 @@ const recipeCard = document.getElementsByClassName('cocktail');
 // cache element using querySelector
 const listEl = document.querySelector('li');
 
-// change recipe card on click function
-document.addEventListener('DOMContentLoaded', () => {
-    const recipeCard = document.getElementById('straw-gin');
-    recipeCard.addEventListener('click', () => {
-        recipeCard.style.backgroundImage = 'url("https://www.pexels.com/photo/cold-drink-with-slice-of-strawberry-5817635/")';
-        recipeCard.style.backgroundSize = 'cover';
-        recipeCard.style.backgroundPosition = 'center';
-        recipeCard.textContent = '';
-    });
-});
-
 
 // addComment function
 function addComment(event) {
