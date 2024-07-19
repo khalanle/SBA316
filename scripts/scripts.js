@@ -11,18 +11,29 @@ const cBtn = document.getElementById('addCommentBtn');
 const strawbGin = document.getElementById('strawb-gin');
 const oldFashion = document.getElementById('old-fashioned');
 const agavMojito = document.getElementById('agave-mojito');
-const recipeCard = document.getElementsByClassName('cocktail');
 // cache element using querySelector
 const listEl = document.querySelector('li');
-
+// interactive event listeners and handlers
 strawbGin.addEventListener("mouseover", function(){
     strawbGin.style.backgroundColor = "transparent";
 });
 strawbGin.addEventListener("mouseout", function(){
     strawbGin.style.backgroundColor = "pink";
 });
-
-
+// old fashion
+oldFashion.addEventListener("mouseover", function(){
+    oldFashion.style.backgroundColor = "transparent";
+});
+oldFashion.addEventListener("mouseout", function(){
+    oldFashion.style.backgroundColor = "chocolate";
+});
+// mojito
+agavMojito.addEventListener("mouseover", function(){
+    agavMojito.style.backgroundColor = "transparent";
+});
+agavMojito.addEventListener("mouseout", function(){
+    agavMojito.style.backgroundColor = "lightgreen";
+});
 
 // addComment function
 function addComment(event) {
@@ -40,5 +51,5 @@ function addComment(event) {
     cInput.focus();
     cBtn.removeEventListener('click', addComment);
 }
-// call function
+// event
 cBtn.addEventListener('click', addComment);
