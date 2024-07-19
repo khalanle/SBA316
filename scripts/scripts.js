@@ -13,6 +13,7 @@ const oldFashion = document.getElementById('old-fashioned');
 const agavMojito = document.getElementById('agave-mojito');
 // cache element using querySelector
 const listEl = document.querySelector('li');
+
 // interactive event listeners and handlers
 strawbGin.addEventListener("mouseover", function(){
     strawbGin.style.backgroundColor = "transparent";
@@ -33,6 +34,35 @@ agavMojito.addEventListener("mouseover", function(){
 });
 agavMojito.addEventListener("mouseout", function(){
     agavMojito.style.backgroundColor = "lightgreen";
+});
+
+// rate recipe
+document.addEventListener('DOMContentLoaded', function() {
+    const stars = document.querySelectorAll('.rating span');
+    let defaultRating = 0;
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            defaultRating = index + 1;
+            updateStars();
+        });
+        star.addEventListener('mouseover', () => {
+            updateStars(index + 1);
+        });
+        star.addEventListener('mouseout', () => {
+            updateStars(defaultRating);
+        });
+    });
+
+    function updateStars(rating=0) {
+        stars.forEach((star,index)=> {
+            if(index < rating) {
+                star.classList.add('active');
+            } else {
+                star.classList.remove('active');
+            }
+        });
+    }
 });
 
 // addComment function

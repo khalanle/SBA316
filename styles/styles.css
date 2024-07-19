@@ -67,6 +67,10 @@ button {
     cursor: pointer;
 }
 
+.rating span.active {
+    color: #f5b301;
+}
+
 #output {
     margin-top: 20px;
     padding: 10px;
