@@ -26,6 +26,22 @@ button {
     display: block;
     margin: 10px 0;
 }
+.cocktail {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+#strawb-gin {
+    background-color: pink;
+}
+#old-fashioned {
+    background-color: chocolate;
+}
+#agave-mojito {
+    background-color: lightgreen;
+}
+
 #output {
     margin-top: 20px;
     padding: 10px;
@@ -44,9 +60,4 @@ button {
     margin: auto;
     text-align: center;
 }
-.cocktail {
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
+
