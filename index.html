@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBA316</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
     <div id="app">
-    <h1 id="main-title">Kale's Cocktail Recipes</h1>
-    <h3 id="about">About</h3>
-    <div id="about-info">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo iure tenetur, earum soluta, maiores veritatis fuga architecto omnis eos ex aperiam repudiandae provident ratione 
-        blanditiis distinctio asperiores quidem nulla accusamus!
-    </div>
-    <br>
-    <div id="strawb-gin">
-        <h3 id="drink-title">Strawberry Basil Gin Smash</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, veritatis alias obcaecati dolores mollitia asperiores laborum voluptate impedit consectetur commodi similique culpa sit dolor. 
-            Mollitia explicabo harum deserunt quam id.</p>
-            <br>
-        <ul id="ingredient-list">
-            <li>Bombay Sapphire gin</li>
-            <li>Fresh lime juice</li>
-            <li>Fresh basil leaves</li>
-            <li>Chopped strawberries</li>
-            <li>Simple syrup</li>
-            <li>Tonic water</li>
-        </ul>
+        <h1 id="main-title">Kale's Cocktail Recipes</h1>
+        <h3 id="about">About</h3>
+        <div id="about-info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo iure tenetur, earum soluta, maiores veritatis
+            fuga architecto omnis eos ex aperiam repudiandae provident ratione
+            blanditiis distinctio asperiores quidem nulla accusamus!
+        </div>
         <br>
-        <ol id="instruction-list">
-            <li>Add strawberries, lime juice, and basil leaves to a glass with 1 oz of simple syrup and muddle ingredients.</li>
-            <li>Measure and pour 2 oz of gin to the glass and fill with ice.</li>
-            <li>Fill glass with tonic water and stir.</li>
-            <li>Garnish with lime slice and enjoy!</li>
-        </ol>
+        <div id="strawb-gin">
+            <h3 id="drink-title">Strawberry Basil Gin Smash</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, veritatis alias obcaecati dolores mollitia
+                asperiores laborum voluptate impedit consectetur commodi similique culpa sit dolor.
+                Mollitia explicabo harum deserunt quam id.</p>
+            <br>
+            <ul id="ingredient-list">
+                <li>Bombay Sapphire gin</li>
+                <li>Fresh lime juice</li>
+                <li>Fresh basil leaves</li>
+                <li>Chopped strawberries</li>
+                <li>Simple syrup</li>
+                <li>Tonic water</li>
+            </ul>
+            <br>
+            <ol id="instruction-list">
+                <li>Add strawberries, lime juice, and basil leaves to a glass with 1 oz of simple syrup and muddle
+                    ingredients.</li>
+                <li>Measure and pour 2 oz of gin to the glass and fill with ice.</li>
+                <li>Fill glass with tonic water and stir.</li>
+                <li>Garnish with lime slice and enjoy!</li>
+            </ol>
+        </div>
     </div>
-    </div> 
-    <div id="form-validation">
-        <p>sign up for our newsletter!</p>
+    <form action="javascript: alert('Success!');" name="myForm" method="POST" id="form">
+        <div id="newsletter">
+            <p>sign up for our newsletter!</p>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="zip" placeholder="Zip Code" />
+            <input type="password" name="password" placeholder="Password"/>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+    <div id="comment-section">
         <p>leave a comment!</p>
     </div>
+
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>
