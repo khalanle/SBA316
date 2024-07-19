@@ -32,7 +32,6 @@ button {
     border: 1px solid gray;
     border-radius: 5px;
 }
-
 #comment-section {
     max-width: 1000px;
     margin: auto;
@@ -41,8 +40,13 @@ button {
     border: 1px solid #ddd;
     border-radius: 10px;
 }
-
 #newsletter {
     margin: auto;
     text-align: center;
+}
+.cocktail {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
