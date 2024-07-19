@@ -1,7 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/bgtest.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
+
 #app {
     max-width: 600px;
     margin: auto;
@@ -9,54 +16,65 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
 }
+
 #main-title {
     text-align: center;
 }
+
 #item-list {
     list-style-type: none;
     padding: 0;
 }
+
 .item {
     background-color: #F0F0F0;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
+
 button {
     display: block;
     margin: 10px 0;
 }
+
 .cocktail {
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
+
 #strawb-gin {
     background-color: pink;
 }
+
 #old-fashioned {
     background-color: chocolate;
 }
+
 #agave-mojito {
     background-color: lightgreen;
 }
+
 #output {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
 }
+
 #comment-section {
     max-width: 1000px;
     margin: auto;
-    padding-top: 5px;;
+    padding-top: 5px;
+    ;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
+
 #newsletter {
     margin: auto;
     text-align: center;
 }
-

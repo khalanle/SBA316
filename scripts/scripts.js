@@ -8,12 +8,20 @@ const cList = document.getElementById('commentList');
 const cInput = document.getElementById('commentInput');
 const cBtn = document.getElementById('addCommentBtn');
 // cocktails
-const strawbGin = document.getElementById('straw-gin');
+const strawbGin = document.getElementById('strawb-gin');
 const oldFashion = document.getElementById('old-fashioned');
 const agavMojito = document.getElementById('agave-mojito');
 const recipeCard = document.getElementsByClassName('cocktail');
 // cache element using querySelector
 const listEl = document.querySelector('li');
+
+strawbGin.addEventListener("mouseover", function(){
+    strawbGin.style.backgroundColor = "transparent";
+});
+strawbGin.addEventListener("mouseout", function(){
+    strawbGin.style.backgroundColor = "pink";
+});
+
 
 
 // addComment function
